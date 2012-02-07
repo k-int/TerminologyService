@@ -79,6 +79,20 @@ log4j = {
     //    console name:'stdout', layout:pattern(conversionPattern: '%c{2} %m%n')
     //}
 
+    appenders {
+        //file name:'file', file:'/tmp/FeedManager.log'
+        // file name:'file', file:'/tmp/FeedManager.log', threshold: org.apache.log4j.Level.ALL
+        console name: "stdout", threshold: org.apache.log4j.Level.ALL
+    }
+
+    //debug  'grails.app',
+    debug  'grails.app.controllers',
+           'grails.app.services',
+           'grails.app.domain',
+           'grails.app.conf',
+           'grails.app.jobs',
+           'grails.app.filters'
+
     error  'org.codehaus.groovy.grails.web.servlet',  //  controllers
            'org.codehaus.groovy.grails.web.pages', //  GSP
            'org.codehaus.groovy.grails.web.sitemesh', //  layouts
