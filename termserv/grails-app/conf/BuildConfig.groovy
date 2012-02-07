@@ -41,6 +41,9 @@ grails.project.dependency.resolution = {
         runtime ":jquery:1.7.1"
         runtime ":resources:1.1.5"
 
+        runtime 'mysql:mysql-connector-java:5.1.18'
+        runtime 'com.gmongo:gmongo:0.9.4'
+
         build ":tomcat:$grailsVersion"
     }
 }
