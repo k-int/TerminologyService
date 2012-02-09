@@ -9,5 +9,7 @@ class UrlMappings {
 
 		"/"(view:"/index")
 		"500"(view:'/error')
+
+                "/ctx/$ctx" (controller:'context', action:'index')
 	}
 }
